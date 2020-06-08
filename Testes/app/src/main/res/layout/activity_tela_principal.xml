@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Telas.TelaPrincipal">
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="Banco de Dados" />
+
+            <Button
+                android:id="@+id/bt02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="LISTA" />
+
+            <Button
+                android:id="@+id/bt03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="LOCALIZACAO" />
+
+            <Button
+                android:id="@+id/bt04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="MAPA" />
+
+            <Button
+                android:id="@+id/bt05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="Dailog" />
+
+            <Button
+                android:id="@+id/bt06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="Apresentação" />
+
+            <Button
+                android:id="@+id/bt07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="Buscar Coordenadas" />
+
+            <Button
+                android:id="@+id/bt08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="TROCA DE IMAGEM" />
+
+            <Button
+                android:id="@+id/bt09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="PROPAGANDA" />
+
+            <Button
+                android:id="@+id/bt10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="LOCALIZAR BAIRROS" />
+
+            <Button
+                android:id="@+id/bt11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="Tabela Feiras Semana" />
+
+            <Button
+                android:id="@+id/bt12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="Avaliacao" />
+
+            <Button
+                android:id="@+id/bt13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="AcessoOnclick"
+                android:text="Calcular Media" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

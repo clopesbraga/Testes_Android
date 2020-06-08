@@ -1,0 +1,880 @@
+<resources>
+    <string name="app_name">Testes</string>
+    <string name="title_activity_tela_inicial">Tela_inicial</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tela_mapa">Mapa</string>
+    <string name="title_activity_tela_nova_localizacao">TelaNovaLocalizacao</string>
+
+    <string-array name="cidades">
+        <item>SAO PAULO</item>
+        <item>GUARULHOS</item>
+    </string-array>
+
+    <string-array name="sp_bairros">
+        <item>VL FORMOSA</item>
+        <item>VL CALIFORNIA</item>
+        <item>VL RICA</item>
+        <item>VL CARRAO</item>
+        <item>TATUAPE</item>
+        <item>PQ MARIA LUIZA</item>
+        <item>VL NOVA YORK</item>
+        <item>VL MANCHESTER</item>
+        <item>ARICANDUVA</item>
+        <item>VL ANTONIETA</item>
+        <item>JD VL FORMOSA</item>
+        <item>VL STA IZABEL</item>
+        <item>CHAC BELENZINHO</item>
+        <item>VILA GOMES CARDIM</item>
+        <item>ALTO DA MOOCA</item>
+        <item>JD ARICANDUVA</item>
+        <item>JD IVA</item>
+        <item>VL MANCHESTER</item>
+        <item>VL CRUZEIRO</item>
+        <item>BARREIRA GRANDE</item>
+        <item>VILA ANTONIETA</item>
+        <item>JD ANGELA</item>
+        <item>JD SAO LUIZ</item>
+        <item>VL REMO</item>
+        <item>JD RANIERI</item>
+        <item>PQ STO ANTONIO</item>
+        <item>CIDADE IPAVA </item>
+        <item>PQ STO ANTONIO	</item>
+        <item>PIRAPORINHA</item>
+        <item>JD IBIRAPUERA</item>
+        <item>JD STA GERTRUDES</item>
+        <item>JD SAO LUIZ</item>
+        <item>PQ NOVO STO AMARO</item>
+        <item>JD VAZ DE LIMA</item>
+        <item>PQ FIG GRANDE</item>
+        <item>VL REMO</item>
+        <item>JD INDEPENDENCIA</item>
+        <item>VL STA LUCIA</item>
+        <item>JD VERGUEIRO</item>
+        <item>VL DAS BELEZAS</item>
+        <item>JD IMBE</item>
+        <item>JARDIM SAO LUIZ</item>
+        <item>SAO LUIS</item>
+        <item>PARELHEIROS</item>
+        <item>VARGEM GRANDE</item>
+        <item>JD DOS ALAMOS	</item>
+        <item>JD MARIA BORBA	</item>
+        <item>VILA VARGEM GRANDE	</item>
+        <item>VL SONIA</item>
+        <item>VL TIRADENTES</item>
+        <item>JD ARPOADOR</item>
+        <item>BUTANTA</item>
+        <item>JD BOA VISTA</item>
+        <item>JD CELESTE</item>
+        <item>JD ARPOADOR</item>
+        <item>ESTADIO DO MORUMBI</item>
+        <item>RIO PEQUENO</item>
+        <item>JD JOAO XXIII</item>
+        <item>ITAIM BIBI</item>
+        <item>VL INDIANA</item>
+        <item>VL DALVA</item>
+        <item>JD CELESTE</item>
+        <item>JD BONFIGLIOLI</item>
+        <item>VL MARIA LUIZA</item>
+        <item>JD SAO JORGE</item>
+        <item>JD GUARAU</item>
+        <item>REAL PQ MORUMBI</item>
+        <item>VL SONIA</item>
+        <item>RIO PEQUENO</item>
+        <item>VL BORGES</item>
+        <item>VL GOMES</item>
+        <item>MORUMBI</item>
+        <item>CAXINGUI</item>
+        <item>JD D ABRIL	</item>
+        <item>RIO PEQUENO</item>
+        <item>JD ANTONIA</item>
+        <item>EDUCANDARIO COHAB</item>
+        <item>JD RAPOSO TAVARES</item>
+        <item>VL DALVA</item>
+        <item>PQ REGINA</item>
+        <item>CAMPO LIMPO</item>
+        <item>PQ FERNANDA</item>
+        <item>JD DAS ROSAS</item>
+        <item>JD ROSANA</item>
+        <item>JD JANGADEIRO</item>
+        <item>CAPAO REDONDO</item>
+        <item>JD JANGADEIRO</item>
+        <item>JD ROSANA</item>
+        <item>CAPAO REDONDO</item>
+        <item>VL PRELL</item>
+        <item>JD MACEDONIA</item>
+        <item>CAMPO LIMPO</item>
+        <item>JD CATANDUVA</item>
+        <item>PQ REGINA</item>
+        <item>JD IRENE</item>
+        <item>CAPAO REDONDO</item>
+        <item>JD UMARIZAL</item>
+        <item>JD IPE</item>
+        <item>PARQUE FERNANDA</item>
+        <item>JD MARIA SAMPAIO</item>
+        <item>PARAIZOPOLIS</item>
+        <item>JD UMUARAMA</item>
+        <item>JARDIM OLINDA</item>
+        <item>VILA ANDRADE</item>
+        <item>PQ GRAJAU</item>
+        <item>CID DUTRA</item>
+        <item>JD PRESIDENTE</item>
+        <item>JD IPANEMA</item>
+        <item>JD TRES CORACOES</item>
+        <item>JD COLONIAL	</item>
+        <item>PQ SAO PAULO</item>
+        <item>PQ AMERICA</item>
+        <item>VELEIROS</item>
+        <item>COCAIA</item>
+        <item>VL SAO JOSE</item>
+        <item>VL FRIBURGO</item>
+        <item>GRAJAU</item>
+        <item>JD STA FRANCISCA</item>
+        <item>PQ BRASIL</item>
+        <item>SOCORRO</item>
+        <item>JD IMBUIAS</item>
+        <item>JD PRIMAVERA</item>
+        <item>STO AMARO</item>
+        <item>VL FRIBURGO</item>
+        <item>JD SAO BERNARDO</item>
+        <item>CAPELA DO SOCORRO</item>
+        <item>PQ RESIDENCIAL</item>
+        <item>JD SATELITE</item>
+        <item>JD ALMEIDA PRADO</item>
+        <item>VILA NATAL</item>
+        <item>IMIRIM</item>
+        <item>CASA VERDE</item>
+        <item>VL STA MARIA</item>
+        <item>CASA VERDE</item>
+        <item>JD STA CRUZ</item>
+        <item>PQ PERUCHE</item>
+        <item>VL CAROLINA</item>
+        <item>VL CONTINENTAL</item>
+        <item>CASA VERDE ALTA</item>
+        <item>PARQUE SOUZA ARANHA</item>
+        <item>CASA VERDE</item>
+        <item>VL NOVA CACHOEIRINHA</item>
+        <item>PQ PERUCHE</item>
+        <item>CASA VERDE</item>
+        <item>FREGUESIA DO O</item>
+        <item>LIMAO</item>
+        <item>VL NOVA CACHOEIRINHA</item>
+        <item>VL SIQUEIRA</item>
+        <item>PARQUE SOUZA ARANHA</item>
+        <item>JD PRUDENCIA</item>
+        <item>VL CONSTANCIA</item>
+        <item>JD UBIRAJARA</item>
+        <item>CID ADEMAR</item>
+        <item>JD MIRIAM</item>
+        <item>PEDREIRA</item>
+        <item>JD CIDALIA</item>
+        <item>STO AMARO</item>
+        <item>CID ADEMAR</item>
+        <item>PEDREIRA</item>
+        <item>JD NITEROI</item>
+        <item>JD MARAJOARA</item>
+        <item>JD VILAS BOAS</item>
+        <item>VL BUENOS AIRES</item>
+        <item>JD VERONIA</item>
+        <item>PONTE RAZA</item>
+        <item>ERMELINO MATARAZZO</item>
+        <item>JD POPULAR</item>
+        <item>JD LISBOA</item>
+        <item>BURGO PAULISTA</item>
+        <item>SAO FRANCISCO</item>
+        <item>VL PONTE RASA</item>
+        <item>VL CISPER</item>
+        <item>NOSSA SENHORA DO O</item>
+        <item>VL BANCARIA</item>
+        <item>VL BRASILANDIA</item>
+        <item>JD VISTA ALEGRE</item>
+        <item>JD IRACEMA</item>
+        <item>VL NIGRI	</item>
+        <item>JD GUARANI	</item>
+        <item>VL MIRIAN	</item>
+        <item>JD MONJOLO	</item>
+        <item>PQ TIETE	</item>
+        <item>LIMAO	</item>
+        <item>VILA GONCALVES	</item>
+        <item>JD ANA MARIA	</item>
+        <item>JARDIM BRASILIA	</item>
+        <item>VL PRINCESA ISABEL	</item>
+        <item>GUAIANAZES	</item>
+        <item>JD SAO PAULO	</item>
+        <item>JARDIM SOARES	</item>
+        <item>JARDIM SAO PAULO	</item>
+        <item>JD CELIA	</item>
+        <item>VL SAO GERALDO	</item>
+        <item>LAJEADO	</item>
+        <item>	 VILA PRINCESA ISABEL	</item>
+        <item>	 GUAINAZES	</item>
+        <item>	 JARDIM SAO PAULO	</item>
+        <item>	 CID TIRADENTES COHAB	</item>
+        <item>	 CID TIRADENTES	</item>
+        <item>	 ITAQUERA	</item>
+        <item>	 GUAIANAZES COHAB	</item>
+        <item>	 CID TIRADENTES	</item>
+        <item>	 TIRADENTES COHAB	</item>
+        <item>	 STA ETELVINA COHAB	</item>
+        <item>	 CID TIRADENTES COHAB	</item>
+        <item>	 CIDADE TIRADENTES	</item>
+        <item>	 ALTO DO IPIRANGA	</item>
+        <item>	 VL DAS MERCES	</item>
+        <item>	 AGUA FUNDA	</item>
+        <item>	 BOSQUE DA SAUDE	</item>
+        <item>	VL STA EULALIA	</item>
+        <item>	 VL ARAPUA	</item>
+        <item>	 VL MONUMENTO	</item>
+        <item>	 MOINHO VELHO	</item>
+        <item>	 SAO JOAO CLIMACO	</item>
+        <item>	 VL MORAES	</item>
+        <item>	 VL NAIR	</item>
+        <item>	VL VERA	</item>
+        <item>	 JD LEAR	</item>
+        <item>	 IPIRANGA	</item>
+        <item>	 SACOMA	</item>
+        <item>	 VL CARIOCA	</item>
+        <item>	 JD DA SAUDE	</item>
+        <item>	 JD MARIA ESTELA	</item>
+        <item>	 ALTO DO IPIRANGA	</item>
+        <item>	 IPIRANGA	</item>
+        <item>	 IPIRANGA	</item>
+        <item>	 VL GUMERCINDO	</item>
+        <item>	 VL DAS MERCES	</item>
+        <item>	 VL CONDE DO PINHAL	</item>
+        <item>	 JD PATENTE	</item>
+        <item>	 VL OLIVIERI	</item>
+        <item>	 PQ BRISTOL	</item>
+        <item>	 SACOMA	</item>
+        <item>	 VL MORAES	</item>
+        <item>	 VL NAIR	</item>
+        <item>	 VL CARIOCA	</item>
+        <item>	 JD CLIMAX	</item>
+        <item>	 JD TROPICAL	</item>
+        <item>	 SACOMA	</item>
+        <item>	 HELIOPOLIS	</item>
+        <item>	 JARDIM MARIA ESTELA	</item>
+        <item>	 VL CURUCA VELHA	</item>
+        <item>	 ITAIM PAULISTA	</item>
+        <item>	 JD CAMPOS	</item>
+        <item>	 JD NOVA CURUCA	</item>
+        <item>	 JD CAMARGO VELHO	</item>
+        <item>	VL ITAIM	</item>
+        <item>	 JD GIANETTI	</item>
+        <item>	 ITAIM PAULISTA	</item>
+        <item>	 VL NOVA CURACA	</item>
+        <item>	 JD MILIUNAS	</item>
+        <item>	 JD ROBRU	</item>
+        <item>	 JD CAMARGO NOVO	</item>
+        <item>	 PQ STA RITA	</item>
+        <item>	 VL CURUCA NOVA	</item>
+        <item>	 JD DOS IPES	</item>
+        <item>	 JD DAS OLIVEIRAS	</item>
+        <item>	 JD NELIA	</item>
+        <item>	 CDHU CAMARGO VELHO	</item>
+        <item>	JD BRASILIA	</item>
+        <item>	PQ SAVOY CITY	</item>
+        <item>	ITAQUERA	</item>
+        <item>	VL SUICA	</item>
+        <item>	GUAIANASES	</item>
+        <item>	VILA REGINA	</item>
+        <item>	 JD NSRA DO CARMO	</item>
+        <item>	 ITAQUERA	</item>
+        <item>	 JD CASA PINTADA	</item>
+        <item>	 PARQUE GUARANI	</item>
+        <item>	VL VERDE	</item>
+        <item>	 JD ARIZI	</item>
+        <item>	 COHAB II	</item>
+        <item>	 JD ITAPEMIRIM	</item>
+        <item>	 VL BRASIL	</item>
+        <item>	 CID LIDER	</item>
+        <item>	 ITAQUERA	</item>
+        <item>	 ITAQUERA	</item>
+        <item>	 ITAQUERA	</item>
+        <item>	VL CAMPANELA	</item>
+        <item>	 VL CARMOSINA	</item>
+        <item>	 JOSE BONIFACIO	</item>
+        <item>	 JD STA HELENA	</item>
+        <item>	 JD BRASILIA	</item>
+        <item>	 COHAB II	</item>
+        <item>	 VL RAMOS	</item>
+        <item>	 JARDIM HELIAN	</item>
+        <item>	 CID LIDER	</item>
+        <item>	 PARADA XV NOVEMBRO	</item>
+        <item>	 VL MASTROCOLA	</item>
+        <item>	 ITAQUERA COHAB II	</item>
+        <item>	 JD STA TEREZINHA	</item>
+        <item>	 PQ SAVOY CITY	</item>
+        <item>	 VL VERDE	</item>
+        <item>	 GUAIANAZES	</item>
+        <item>	 JARDIM ITAPEMIRIM	</item>
+        <item>	CID VARGAS	</item>
+        <item>	AMERICANOPOLIS	</item>
+        <item>	STA CATARINA	</item>
+        <item>	JABAQUARA	</item>
+        <item>	 VL GUARANI	</item>
+        <item>	STA CATARINA	</item>
+        <item>	 VL FACCHINI	</item>
+        <item>	 VL CAMPESTRE	</item>
+        <item>	JACANA	</item>
+        <item>	VL ZILDA	</item>
+        <item>	JD PAULISTANA	</item>
+        <item>	VL NOVA GALVAO	</item>
+        <item>	VL ALBERTINA	</item>
+        <item>	 JD TREMEMBE	</item>
+        <item>	 VL NILO	</item>
+        <item>	 JD TREMEMBE	</item>
+        <item>	 TREMEMBE	</item>
+        <item>	 TUCURUVI	</item>
+        <item>	 VL MAZZEI	</item>
+        <item>	 VL ALBERTINA	</item>
+        <item>	 JD JOAMAR	</item>
+        <item>	 TREMEMBE	</item>
+        <item>	 JD FONTALIS	</item>
+        <item>	VL ROMANA	</item>
+        <item>	STA EDWIGES	</item>
+        <item>	AGUA BRANCA	</item>
+        <item>	VL JAGUARA	</item>
+        <item>	JAGUARE	</item>
+        <item>	 PERDIZES	</item>
+        <item>	 VL ROMANA	</item>
+        <item>	 VL ANASTACIO	</item>
+        <item>	JAGUARE	</item>
+        <item>	 VL PIAUI	</item>
+        <item>	 SUMAREZINHO	</item>
+        <item>	 VL POMPEIA	</item>
+        <item>	 ALTO DA LAPA	</item>
+        <item>	 VL JAGUARA	</item>
+        <item>	 VL HAMBURGUESA	</item>
+        <item>	 PERDIZES	</item>
+        <item>	 VL ROMANA	</item>
+        <item>	 ALTO DA LAPA	</item>
+        <item>	 VL LEOPOLDINA	</item>
+        <item>	 JAGUARE	</item>
+        <item>	 VL IPOJUCA	</item>
+        <item>	 VL POMPEIA	</item>
+        <item>	 VL POMPEIA	</item>
+        <item>	 LAPA DE BAIXO	</item>
+        <item>	BRAS	</item>
+        <item>	BRESSER	</item>
+        <item>	QUARTA PARADA	</item>
+        <item>	ALTO DA MOOCA	</item>
+        <item>	VL DIVA	</item>
+        <item>	 BELEM	</item>
+        <item>	 BRAZ	</item>
+        <item>	 PQ DA MOOCA	</item>
+        <item>	 MOOCA	</item>
+        <item>	 AGUA RASA	</item>
+        <item>	 VL EMA	</item>
+        <item>	 PARI	</item>
+        <item>	 BRAS	</item>
+        <item>	 MOOCA	</item>
+        <item>	 CANINDE	</item>
+        <item>	 MOOCA	</item>
+        <item>	 VL ORATORIO	</item>
+        <item>	 VL CANERO	</item>
+        <item>	 VL SAO CARLOS	</item>
+        <item>	 BELENZINHO	</item>
+        <item>	 BELENZINHO	</item>
+        <item>	 BELENZINHO	</item>
+        <item>	 ALTO DA MOOCA	</item>
+        <item>	 VL PRUDENTE	</item>
+        <item>	 VL PRUDENTE	</item>
+        <item>	 BRAZ	</item>
+        <item>	 ALTO DA MOOCA	</item>
+        <item>	 PARI	</item>
+        <item>	 MOOCA	</item>
+        <item>	 VL LESTE	</item>
+        <item>	 ALTO DA MOOCA	</item>
+        <item>	 BELENZINHO	</item>
+        <item>	 VL INVERNADA	</item>
+        <item>	 BRAS	</item>
+        <item>	 VL ZILDA	</item>
+        <item>	PENHA	</item>
+        <item>	VL DALILA	</item>
+        <item>	VL ESPERANCA	</item>
+        <item>	PQ ARTUR ALVIM	</item>
+        <item>	CANGAIBA	</item>
+        <item>	ENG GOULART	</item>
+        <item>	VL SILVIA	</item>
+        <item>	ITAQUERA	</item>
+        <item>	 PENHA	</item>
+        <item>	 VL PAULISTANIA	</item>
+        <item>	 VL NOVA GRANADA	</item>
+        <item>	 VL GUILHERMINA	</item>
+        <item>	 TRES MARIA	</item>
+        <item>	 VL TALARICO	</item>
+        <item>	 JD COIMBRA	</item>
+        <item>	 JD DANFER	</item>
+        <item>	 CANGAIBA	</item>
+        <item>	 PENHA	</item>
+        <item>	 PENHA	</item>
+        <item>	 VL MATILDE	</item>
+        <item>	 PENHA	</item>
+        <item>	 ARTUR ALVIM	</item>
+        <item>	 JD TRIANA	</item>
+        <item>	 VL NHOCUNE	</item>
+        <item>	VILA VIDAL	</item>
+        <item>	 ARTUR ALVIM	</item>
+        <item>	 ENG GOULART	</item>
+        <item>	 JD NORDESTE	</item>
+        <item>	ITAQUERA COHAB I	</item>
+        <item>	 VL RUI BARBOSA	</item>
+        <item>	 VL ARICANDUVA	</item>
+        <item>	 VL MARIETA	</item>
+        <item>	 VL GUILHERMINA	</item>
+        <item>	 JD MARINGA	</item>
+        <item>	 VL RE	</item>
+        <item>	 VL NHOCUNE	</item>
+        <item>	 VL CISPER	</item>
+        <item>	 VILA SILVIA	</item>
+        <item>	 PENHA	</item>
+        <item>	 VL SANTANA	</item>
+        <item>	 VL MATILDE	</item>
+        <item>	 CID PATRIARCA	</item>
+        <item>	 CID A E CARVALHO	</item>
+        <item>	 ITAQUERA COHAB I	</item>
+        <item>	 VL BUENOS AYRES	</item>
+        <item>	 JD NORDESTE	</item>
+        <item>	 JD PIRATININGA	</item>
+        <item>	VL OLIMPIA	</item>
+        <item>	CID MONCOES	</item>
+        <item>	SUMARE	</item>
+        <item>	JD AMERICA	</item>
+        <item>	 STO AMARO	</item>
+        <item>	 BROOKLIM PAULISTA	</item>
+        <item>	 PINHEIROS	</item>
+        <item>	 JD PAULISTA	</item>
+        <item>	 JD DAS BANDEIRAS	</item>
+        <item>	 VL BEATRIZ	</item>
+        <item>	 CID MONCOES	</item>
+        <item>	 CERQUEIRA CESAR	</item>
+        <item>	 JD AMERICA	</item>
+        <item>	CERQUEIRA CEZAR	</item>
+        <item>	 VL OLIMPIA	</item>
+        <item>	 PINHEIROS	</item>
+        <item>	 VL IDA	</item>
+        <item>	 JD PAULISTA	</item>
+        <item>	 VL OLIMPIA	</item>
+        <item>	 BROOKLIN PAULISTA	</item>
+        <item>	 LAPA	</item>
+        <item>	 ITAIM BIBI	</item>
+        <item>	 VL MADALENA	</item>
+        <item>	VILA BONILHA	</item>
+        <item>	PQ PAN AMERICANO	</item>
+        <item>	JD JOSE MARIA	</item>
+        <item>	JARDIM CITY JARAGUA	</item>
+        <item>	PIRITUBA	</item>
+        <item>	 JD SAO JOSE	</item>
+        <item>	 PQ SAO DOMINGUES	</item>
+        <item>	 PQ NACOES UNIDAS	</item>
+        <item>	 VILA AURORA	</item>
+        <item>	 PIQUERI	</item>
+        <item>	 CHAC INGLESA	</item>
+        <item>	 JD REGINA	</item>
+        <item>	PQ PAN AMERICANO	</item>
+        <item>	JD IPANEMA	</item>
+        <item>	 JD PIRITUBA	</item>
+        <item>	JARIDM	</item>
+        <item>	 VL ZATT	</item>
+        <item>	 VL JAGUARA	</item>
+        <item>	 PARADA DE TAIPAS	</item>
+        <item>	JD MAGGI	</item>
+        <item>	JARDIM SANTA MONICA	</item>
+        <item>	 VL MUTINGA	</item>
+        <item>	 VL JARAGUA	</item>
+        <item>	 JD RINCAO	</item>
+        <item>JARDIM VITORIA	</item>
+        <item>PARADA DE TAIPAS	</item>
+        <item>JARDIM MARISA	</item>
+        <item>PIRITUBA	</item>
+        <item>VL MIRANTE	</item>
+        <item>PIRITUBA	</item>
+        <item>VL MANGALOT	</item>
+        <item>JD DA FELICIDADE	</item>
+        <item>CID D ABRIL	</item>
+        <item>JD MARILU	</item>
+        <item>PIRITUBA	</item>
+        <item>JD SAO JOSE	</item>
+        <item> PARADA DE TAIPAS	</item>
+        <item>VILA NOVA ESPERANCA	</item>
+        <item>JD DO RUSSO	</item>
+        <item>JD BRITANIA	</item>
+        <item>VL FANTON	</item>
+        <item>VILA CAIUBA	</item>
+        <item>PERUS	</item>
+        <item>VL MALVINA	</item>
+        <item>VL PERUS	</item>
+        <item>JD JARAGUA	</item>
+        <item>RECANTO DOS HUMILDES	</item>
+        <item>MANDAQUI	</item>
+        <item>STA TEREZINHA	</item>
+        <item>TUCURUVI	</item>
+        <item>VL NOVA MAZZEI	</item>
+        <item>VILA GUSTAVO	</item>
+        <item>AGUA FRIA	</item>
+        <item>PQ VITORIA	</item>
+        <item>STA TEREZINHA	</item>
+        <item>MANDAQUI	</item>
+        <item>JD SAO BENTO	</item>
+        <item>CHORA MENINO	</item>
+        <item>VL GUSTAVO	</item>
+        <item>VL MAZZEI	</item>
+        <item>STA INES	</item>
+        <item>VL PAULICEIA	</item>
+        <item>LAUSANE PAULISTA	</item>
+        <item>PALMAS DO TREMEMBE	</item>
+        <item>VL STA TEREZINHA	</item>
+        <item>TUCURUVI	</item>
+        <item>VL AURORA	</item>
+        <item>IMIRIM	</item>
+        <item>VL CONSTANCA	</item>
+        <item>RODRIGUES ALVES	</item>
+        <item>LAUZANE PAULISTA	</item>
+        <item>JD JURUBATUBA	</item>
+        <item>STO AMARO	</item>
+        <item>CAMPO BELO	</item>
+        <item>VL CRUZEIRO	</item>
+        <item>CAMPO BELO	</item>
+        <item>CHAC STO ANTONIO	</item>
+        <item>CAMPO BELO	</item>
+        <item>VL ISA	</item>
+        <item>JD AEROPORTO	</item>
+        <item>CAMPO BELO	</item>
+        <item>CONGONHAS	</item>
+        <item>CHAC STO ANTONIO	</item>
+        <item>JD CONSORCIO	</item>
+        <item>VL ARRIETE	</item>
+        <item>VL SAO PEDRO	</item>
+        <item>VL SOFIA	</item>
+        <item>VARZEA DE BAIXO	</item>
+        <item>VL STA CATARINA	</item>
+        <item>PQ JABAQUARA	</item>
+        <item>VL UNIAO	</item>
+        <item>PIRAQUARA	</item>
+        <item>JD SAO VICENTE	</item>
+        <item>JD HELENA	</item>
+        <item>PQ PAULISTANO	</item>
+        <item>ITAIM PAULISTA	</item>
+        <item>VL PROGRESSO	</item>
+        <item>VL JACUI	</item>
+        <item>VL NORMA	</item>
+        <item>SAO FRANCISCO	</item>
+        <item>LIMOEIRO	</item>
+        <item>CID PEDRO JOSE NUNES	</item>
+        <item>VL PROGRESSO	</item>
+        <item>JD MAIA	</item>
+        <item>VL SAO SILVESTRE	</item>
+        <item>VL JACUI	</item>
+        <item>PQ PAULISTANO	</item>
+        <item>VL PROGRESSO	</item>
+        <item>JD ROMANO	</item>
+        <item>CID NOVA S MIGUEL	</item>
+        <item>JD NOEMIA	</item>
+        <item>JD DAS CAMELIAS	</item>
+        <item>JD SAO MARTINHO	</item>
+        <item>VL SINHA	</item>
+        <item>JD SAO CARLOS	</item>
+        <item>SAO MIGUEL	</item>
+        <item>PQ CRUZEIRO DO SUL	</item>
+        <item>CHAC TRES MENINAS	</item>
+        <item>VL MONTE SANTO	</item>
+        <item>LIBERDADE	</item>
+        <item>CAMBUCI	</item>
+        <item>STA CECILIA	</item>
+        <item>PONTE PEQUENA	</item>
+        <item>CONSOLACAO	</item>
+        <item>STA EFIGENIA	</item>
+        <item>BELA VISTA	</item>
+        <item>CAMBUCI	</item>
+        <item>PACAEMBU	</item>
+        <item>ACLIMACAO	</item>
+        <item>CERQUEIRA CEZAR	</item>
+        <item>BOM RETIRO	</item>
+        <item>CAMBUCI	</item>
+        <item>PACAEMBU	</item>
+        <item>BELA VISTA	</item>
+        <item>STA CECILIA	</item>
+        <item>CAMBUCI	</item>
+        <item>BELA VISTA	</item>
+        <item>CONSOLACAO	</item>
+        <item>PACAEMBU	</item>
+        <item>STA CECILIA	</item>
+        <item>ACLIMACAO	</item>
+        <item>BARRA FUNDA	</item>
+        <item>BOM RETIRO	</item>
+        <item>PACAEMBU	</item>
+        <item>CERQUEIRA CEZAR	</item>
+        <item>CENTRO	</item>
+        <item>CID SAO MATHEUS	</item>
+        <item>JD ROSELI	</item>
+        <item>JD PARAGUASSU	</item>
+        <item>JD VERA CRUZ	</item>
+        <item>JD VL CARRAO	</item>
+        <item>JD SAO FRANCISCO	</item>
+        <item>JARDIM IGUATEMI	</item>
+        <item>JD ESTER	</item>
+        <item>JD NOVE DE JULHO	</item>
+        <item>JD STA ADELIA	</item>
+        <item>SAO MATEUS	</item>
+        <item>JARD M AUGUSTO	</item>
+        <item>JARDIM SANTO ANDRE	</item>
+        <item>SAO MATEUS	</item>
+        <item>JD SAO JOSE	</item>
+        <item>SAO MATEUS	</item>
+        <item>JD VERA CRUZ	</item>
+        <item>PQ SAO RAFAEL	</item>
+        <item>JD TIETE	</item>
+        <item>JD STA BARBARA	</item>
+        <item>VL IV CENTENARIO	</item>
+        <item>JD IGUATEMI	</item>
+        <item>CID SAO MATEUS	</item>
+        <item>JD VL NOVA CARRAO	</item>
+        <item>JD BOA ESPERANCA	</item>
+        <item>JARDIM SANTA ADELIA	</item>
+        <item>JD STA ADELIA	</item>
+        <item>SAO MATHEUS	</item>
+        <item>JD NOVE DE JULHO	</item>
+        <item>PQ SAO RAFAEL	</item>
+        <item>JD PLANALTO	</item>
+        <item>JD STO ANDRE	</item>
+        <item>JD DAS LARANJEIRAS	</item>
+        <item>SAO MATEUS	</item>
+        <item>PQ DO CARMO	</item>
+        <item>SAO MATEUS	</item>
+        <item>PARAISO	</item>
+        <item>MOEMA	</item>
+        <item>VL DA SAUDE	</item>
+        <item>STA CRUZ	</item>
+        <item>VL CLEMENTINO	</item>
+        <item>ACLIMACAO	</item>
+        <item>IBIRAPUERA	</item>
+        <item>VL NOVA CONCEICAO	</item>
+        <item>VL MARIANA	</item>
+        <item>PLANALTO PAULISTA	</item>
+        <item>SAO JUDAS	</item>
+        <item>JD VL MARIANA	</item>
+        <item>JD DA GLORIA	</item>
+        <item>INDIANOPOLIS	</item>
+        <item>BOSQUE DA SAUDE	</item>
+        <item>PLANALTO PAULISTA	</item>
+        <item>ACLIMACAO	</item>
+        <item>SAUDE	</item>
+        <item>VL HELENA	</item>
+        <item>MOEMA	</item>
+        <item>ACLIMACAO	</item>
+        <item>VL CLEMENTINO	</item>
+        <item>IBIRAPUERA	</item>
+        <item>CHAC INGLESA	</item>
+        <item>PLANALTO PAULISTA	</item>
+        <item>FAZENDA JUTA	</item>
+        <item>MEDEIROS	</item>
+        <item>JD JAPAO	</item>
+        <item>VL EDE	</item>
+        <item>VL SABRINA	</item>
+        <item>CARANDIRU	</item>
+        <item>VL GUILHERME	</item>
+        <item>VL MAZZEI	</item>
+        <item>VL GUILHERME	</item>
+        <item>VL GUSTAVO	</item>
+        <item>JD JAPAO	</item>
+        <item>JD BRASIL	</item>
+        <item>VILA ELISA	</item>
+        <item>VL GUILHERME	</item>
+        <item>VL EDE	</item>
+        <item>VL MEDEIROS	</item>
+        <item>VL EDE	</item>
+        <item>VL SABRINA	</item>
+        <item>VL GUILHERME	</item>
+        <item>VL MARIA BAIXA	</item>
+        <item>JD BRASIL	</item>
+        <item>PQ NOVO MUNDO	</item>
+        <item>VL PRUDENTE	</item>
+        <item>VL BELA	</item>
+        <item>VL DIVINA PASTORA	</item>
+        <item>PQ STA MADALENA	</item>
+        <item>JD ELBA	</item>
+        <item>JD NOVA SAPOPEMBA	</item>
+        <item>VL ALPINA	</item>
+        <item>JD TIALHA	</item>
+        <item>PQ SAO LUCAS	</item>
+        <item>JD COLORADO	</item>
+        <item>JD PLANALTO	</item>
+        <item>JD SAPOPEMBA	</item>
+        <item>VL ZELINA	</item>
+        <item>VL BELA	</item>
+        <item>VL ANA CLARA	</item>
+        <item>VL EMA	</item>
+        <item>JD GUAIRACA	</item>
+        <item>JD INDEPENDENCIA	</item>
+        <item>VILA REGENTE FEIJO	</item>
+        <item>FAZENDA JUTA	</item>
+        <item>PQ SAO LUCAS	</item>
+        <item>VL DIVA	</item>
+        <item>JD GRIMALDI	</item>
+        <item>JD PLANALTO	</item>
+        <item>JD ELBA	</item>
+        <item>VL CELESTE	</item>
+        <item>VL ZELINA	</item>
+        <item>VL PRUDENTE	</item>
+        <item>VL TOLSTOI	</item>
+        <item>PQ STA MADALENA	</item>
+        <item>JD ANGELA	</item>
+        <item>VL ZELINA	</item>
+        <item>VL REUNIDAS	</item>
+        <item>VL PAULO SILAS	</item>
+        <item>LUZ	</item>
+
+    </string-array>
+    <string-array name="guaru_bairros">
+        <item>Vila Moreira</item>
+        <item>Bom Clima</item>
+        <item>Jardim Adriana</item>
+        <item>Cecap</item>
+        <item>Jardim Presidente Dutra</item>
+        <item>Gopoúva</item>
+        <item>Vila Fátima	</item>
+        <item>Jardim Rosa de França</item>
+        <item>Jardim Almeida Prado</item>
+        <item>Jardim Jovaia</item>
+        <item>Parque Jurema</item>
+        <item>Jardim São Domingos</item>
+        <item>Vila Galvão</item>
+        <item>Centro</item>
+        <item>Jardim Moreira</item>
+        <item>Jardim São João</item>
+        <item>Cidade Soinco</item>
+        <item>Bom Clima</item>
+        <item>Jardim Santa Emília</item>
+        <item>Jardim Angélica</item>
+        <item>Vila Carmela</item>
+        <item>Conjunto Marcos Freire</item>
+        <item>Parque Uirapuru</item>
+        <item>Inocoop</item>
+        <item>Parque Cecap I</item>
+        <item>Jardim Palmira</item>
+        <item>Jardim Monte Carmelo</item>
+        <item>Itapegica</item>
+        <item>Jardim Aracília</item>
+        <item>Ponte Grande</item>
+        <item>Conjunto Haroldo Veloso</item>
+        <item>Pimentas</item>
+        <item>Jardim Cumbica</item>
+        <item>Jardim Santa Cecília</item>
+        <item>Vila Sorocabana</item>
+        <item>Torres Tibagy</item>
+        <item>Jardim Munhoz</item>
+        <item>Jardim Tranquilidade</item>
+        <item>Conjunto Marcos Freire</item>
+        <item>Parque Alvorada</item>
+        <item>Cumbica</item>
+        <item>Taboão</item>
+        <item>Picanço</item>
+        <item>Centro</item>
+        <item>Vila Galvão</item>
+        <item>Parque São Luiz</item>
+
+    </string-array>
+
+    <string name="title_activity_tela_dias_semana">TelaDiasSemana</string>
+    <string name="tab_title">Dias da Semana</string>
+    <string name="tab_text_1">TER</string>
+    <string name="tab_text_2">QUA</string>
+    <string name="tab_text_3">QUI</string>
+    <string name="tab_text_4">SEX</string>
+    <string name="tab_text_5">SAB</string>
+    <string name="tab_text_6">DOM</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
