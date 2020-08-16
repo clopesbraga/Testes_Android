@@ -28,9 +28,10 @@ import java.util.ArrayList;
 import br.com.branch.testes.Adapter.MapaAdapter;
 import br.com.branch.testes.ModeloTabelas.ModeloBanco;
 import br.com.branch.testes.R;
+import br.com.branch.testes.Servicos.ServEnvioDeDados;
 import br.com.branch.testes.Telas.ui.main.SectionsPagerAdapter;
 
-public class TelaDiasSemana extends AppCompatActivity {
+public class TelaFeirasSemanais extends AppCompatActivity {
 
     ArrayAdapter adapter,adapter2;
     Spinner spinnercidade, spinbairro;
@@ -48,6 +49,11 @@ public class TelaDiasSemana extends AppCompatActivity {
     MapaAdapter adapterlist;
     ListView listSemana;
 
+    ServEnvioDeDados servEnvioDeDados= new ServEnvioDeDados();
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +64,8 @@ public class TelaDiasSemana extends AppCompatActivity {
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
         FloatingActionButton fab = findViewById(R.id.fab);
+
+
         spinnercidade = findViewById(R.id.spincidade);
         spinbairro = findViewById(R.id.spinbairro);
         //listSemana = findViewById(R.id.listTab1);
@@ -72,14 +80,16 @@ public class TelaDiasSemana extends AppCompatActivity {
                 Snackbar.make(view, "Mensagem enviada", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
 
-                Background background = new Background();
-                background.execute(spinnercidade.getSelectedItem().toString(),spinbairro.getSelectedItem().toString());
+                //Background background = new Background();
+                //background.execute(spinnercidade.getSelectedItem().toString(),spinbairro.getSelectedItem().toString());
+
+                enviarInfoSobreCidadeEBairro(spinnercidade.getSelectedItem().toString(),spinbairro.getSelectedItem().toString());
 
             }
         });
     }
 
-    public void onResume() {
+   public void onResume() {
         super.onResume();
 
 
@@ -118,12 +128,18 @@ public class TelaDiasSemana extends AppCompatActivity {
 
 
 
+    public void enviarInfoSobreCidadeEBairro(String cidade,String bairro)
+    {
+        servEnvioDeDados.enviarDadosParaWeb(cidade,bairro);
+    }
+
+
 
     //CLASSE INTERNA QUE RECEBE AS INFORMAÇÕES NO BANCO  PARA CRIAR NO MAPA OS MARCADORES DAS FEIRAS NA CIDADE.
-     class Background extends AsyncTask<String, String, String> {
+     /*class Background extends AsyncTask<String, String, String> {
 
 
-        protected String doInBackground(String... params) {
+        /*protected String doInBackground(String... params) {
             String db_cidade = params[0];
             String db_bairro = params[1];
             String dataa = "";
@@ -157,9 +173,9 @@ public class TelaDiasSemana extends AppCompatActivity {
             }
 
 
-        }
+        }*/
 
-        @Override
+        /*@Override
         protected void onPostExecute(final String result) {
 
 
@@ -220,11 +236,12 @@ public class TelaDiasSemana extends AppCompatActivity {
 
             }
 
-        }
-
-    }
-
+        }*/
 
 
 
 }
+
+
+
+

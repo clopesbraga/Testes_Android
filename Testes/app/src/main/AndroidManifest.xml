@@ -22,7 +22,7 @@
         <activity android:name=".Telas.TelaConta"></activity>
         <activity android:name=".Telas.TelaCalcMedia" />
         <activity
-            android:name=".Telas.TelaDiasSemana"
+            android:name=".Telas.TelaFeirasSemanais"
             android:label="@string/title_activity_tela_dias_semana"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Telas.TelaPropaganda" />

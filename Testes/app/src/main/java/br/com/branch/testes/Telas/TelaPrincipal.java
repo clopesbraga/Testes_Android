@@ -46,7 +46,7 @@ public class TelaPrincipal extends AppCompatActivity {
             case R.id.bt10: Intent iLocBairro = new Intent(this, TelaLocaBairro.class);
                 startActivity(iLocBairro); break;
 
-            case R.id.bt11: Intent iNovaLoc = new Intent(this, TelaDiasSemana.class);
+            case R.id.bt11: Intent iNovaLoc = new Intent(this, TelaFeirasSemanais.class);
             startActivity(iNovaLoc); break;
 
             case R.id.bt12: Intent iAvlic = new Intent(this, TelaAvalicao.class);
