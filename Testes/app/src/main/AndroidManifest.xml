@@ -19,7 +19,11 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Telas.TelaConta"></activity>
+        <activity
+            android:name=".TelaMain"
+            android:label="@string/title_activity_tela_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Telas.TelaConta" />
         <activity android:name=".Telas.TelaCalcMedia" />
         <activity
             android:name=".Telas.TelaFeirasSemanais"
