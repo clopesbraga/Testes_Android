@@ -18,7 +18,7 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
-    //CAMPO PARA CRIAR CUSTOM SHOWCASEVIEW LIGHT
+<!--    //CAMPO PARA CRIAR CUSTOM SHOWCASEVIEW LIGHT-->
 
     <style name="CustomTitle" parent="TextAppearance.ShowcaseView.Title">
 
@@ -38,9 +38,9 @@
 
         <item name="sv_titleTextAppearance">@style/CustomTitle</item>
     </style>
-    // FIM DO CAMPO
+<!--    // FIM DO CAMPO-->
 
-    // CAMPO PARA CRIAR CUSTOM SHOWCASEVIEW2
+<!--    // CAMPO PARA CRIAR CUSTOM SHOWCASEVIEW2-->
 
     <style name="CustomShowcaseTheme2" parent="ShowcaseView.Light">
 
@@ -56,7 +56,7 @@
     </style>
 
 
-    //CAMPO PARA CRIAÇÃO DO CUSTOM SHOWCASEVIEW3
+<!--    //CAMPO PARA CRIAÇÃO DO CUSTOM SHOWCASEVIEW3-->
 
     <style name="CustomShowcaseTheme3" parent="ShowcaseView.Light">
 
@@ -74,9 +74,9 @@
 
 
     </style>
-    //FIM DO CAMPO
+<!--    //FIM DO CAMPO-->
 
-    //CAMPO PARA CRIAÇÃO DO CUSTOM SHOWCASEVIEW3
+<!--    //CAMPO PARA CRIAÇÃO DO CUSTOM SHOWCASEVIEW3-->
 
     <style name="CustomShowcaseTheme4" parent="ShowcaseView.Light">
 
@@ -92,9 +92,8 @@
 
         <item name="sv_detailTextAppearance">@style/CustomText2</item>
 
-
     </style>
-    //FIM DO CAMPO
+<!--    //FIM DO CAMPO-->
 
 
     <style name="CustomTitle2" parent="TextAppearance.ShowcaseView.Title.Light">

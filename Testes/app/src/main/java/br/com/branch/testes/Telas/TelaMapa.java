@@ -1,7 +1,5 @@
 package br.com.branch.testes.Telas;
 
-import android.os.AsyncTask;
-import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -17,20 +15,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.HashMap;
-
-import br.com.branch.testes.Adapter.InfoAdapter;
 import br.com.branch.testes.R;
 
 public class TelaMapa extends FragmentActivity implements OnMapReadyCallback {

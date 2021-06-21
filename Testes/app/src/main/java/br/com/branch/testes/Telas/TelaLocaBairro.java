@@ -34,7 +34,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.branch.testes.Adapter.MapaAdapter;
+
 import br.com.branch.testes.ModeloTabelas.ModeloBanco;
 import br.com.branch.testes.R;
 import br.com.branch.testes.Servicos.ServButton;

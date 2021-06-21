@@ -22,9 +22,6 @@ public class TelaPrincipal extends AppCompatActivity {
             case R.id.btn01: Intent iBancoDaos = new Intent(this, TelaBancoDados.class);
             startActivity(iBancoDaos); break;
 
-            case R.id.bt02: Intent iLista = new Intent(this, TelaListaEdittext.class);
-                startActivity(iLista); break;
-
             case R.id.bt04: Intent iMap = new Intent(this, TelaMapa.class);
                 startActivity(iMap); break;
 
@@ -45,9 +42,6 @@ public class TelaPrincipal extends AppCompatActivity {
 
             case R.id.bt10: Intent iLocBairro = new Intent(this, TelaLocaBairro.class);
                 startActivity(iLocBairro); break;
-
-            case R.id.bt11: Intent iNovaLoc = new Intent(this, TelaFeirasSemanais.class);
-            startActivity(iNovaLoc); break;
 
             case R.id.bt12: Intent iAvlic = new Intent(this, TelaAvalicao.class);
             startActivity(iAvlic); break;

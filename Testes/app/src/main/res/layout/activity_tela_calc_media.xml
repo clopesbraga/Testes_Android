@@ -17,13 +17,13 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/txtValor1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Valor 1:" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/edtValor1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -35,13 +35,13 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/txtValor2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Valor 2:" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/edtValor2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -53,13 +53,13 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/txtValor3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Valor 3:" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/edtValor3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -78,7 +78,7 @@
                 android:text="Resultado:" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/txtValorResultado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

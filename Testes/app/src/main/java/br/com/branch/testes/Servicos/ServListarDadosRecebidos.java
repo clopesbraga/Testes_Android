@@ -6,7 +6,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import br.com.branch.testes.Adapter.MapaAdapter;
+
 import br.com.branch.testes.ModeloTabelas.ModeloBanco;
 
 public class ServListarDadosRecebidos {
