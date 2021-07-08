@@ -8,36 +8,46 @@
 
 
     <com.google.android.gms.ads.AdView
-    android:id="@+id/adView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    app:adSize="BANNER"
-    app:adUnitId="ca-app-pub-3940256099942544/6300978111"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.637"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.365">
-
-    </com.google.android.gms.ads.AdView>
-
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView2"
+        android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         app:adSize="BANNER"
         app:adUnitId="ca-app-pub-3940256099942544/6300978111"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_propInterestitial"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.682"></com.google.android.gms.ads.AdView>
+        app:layout_constraintVertical_bias="0.632">
+
+    </com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/btn_propInterestitial"
+        android:layout_width="198dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="328dp"
+        android:onClick="propagandaOnClick"
+        android:text="Propaganda Intersitial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_propagandavideo"
+        android:layout_width="184dp"
+        android:layout_height="56dp"
+        android:onClick="propagandaOnClick"
+        android:text="PROPAGANDA VIDEO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_propInterestitial"
+        app:layout_constraintVertical_bias="0.354" />
 
 
 </android.support.constraint.ConstraintLayout>
