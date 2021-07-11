@@ -1,10 +1,12 @@
-package br.com.branch.testes;
+package br.com.branch.testes.Telas;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import br.com.branch.testes.R;
 
 public class
 TelaVerificarConexao extends AppCompatActivity {
