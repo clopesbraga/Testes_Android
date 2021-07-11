@@ -39,8 +39,6 @@ public class TelaInicial extends AppCompatActivity {
 
                 } finally {
 
-
-
                     Intent intent = new Intent(TelaInicial.this,TelaPrincipal.class);
                     startActivity(intent);
 
